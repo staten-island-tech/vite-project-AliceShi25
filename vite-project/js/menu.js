@@ -7,4 +7,4 @@ const stuff = [
   },
 ];
 
-export { menu };
+export { stuff };
