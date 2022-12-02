@@ -1,1 +1,10 @@
 @import url(variables.css);
+
+body{
+    background-color: var(--lightblue);
+}
+
+h1{
+    font-size: var(--h1);
+    text-align: center;
+}

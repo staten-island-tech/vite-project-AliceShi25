@@ -1,3 +1,19 @@
-body{
-    background-color: blue;
+html,body,*{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+font-size: 62.5%;
+font-family: 'Swanky and Moo Moo', cursive;
+}
+
+:root{
+/*colors*/
+--lightblue:#1989ff;
+
+/*text*/
+--h1: 7.594rem;
+--h2: 5.063rem;
+--h3: 3.375rem;
+--h4: 2.25rem;
+--h5: 1.5rem;
 }
