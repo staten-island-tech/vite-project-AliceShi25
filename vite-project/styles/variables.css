@@ -1,14 +1,7 @@
-html,body,*{
-margin: 0;
-padding: 0;
-box-sizing: border-box;
-font-size: 62.5%;
-font-family: 'Swanky and Moo Moo', cursive;
-}
-
 :root{
 /*colors*/
---lightblue:#1989ff;
+--lightblue:#00b4d8;
+--lightpink:#ffc2d1;
 
 /*text*/
 --h1: 7.594rem;
