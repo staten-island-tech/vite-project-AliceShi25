@@ -9,7 +9,7 @@ html,body,*{
     }
 
 body{
-    background-color: var(--lightblue);
+    background-color: var(--background-color);
     text-align: center;
 }
 
@@ -26,17 +26,15 @@ body{
     flex: 0 0 32%;
     width: 32vw;
     margin: 25px auto;
-    background-color: #22c9eb;
+    background-color: var(--box-color);
     align-content: center;
-    border: solid #f4fdff;
+    border: solid white;
     border-radius: 25px;
-    box-shadow: 12px 10px 0px #0077b6;
+    box-shadow: 12px 10px 0px var(--box-shadow);
 
 }
-.defaultTheme{
-    background-color: var(--lightblue);
-}
 
-.pinkTheme{
-    background-color: var(--lightpink);
+.image{
+    width:15vw;
+    height: 13vw;
 }

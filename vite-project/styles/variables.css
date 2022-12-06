@@ -2,6 +2,11 @@
 /*colors*/
 --lightblue:#00b4d8;
 --lightpink:#ffc2d1;
+--boxbluecolor: #22c9eb;
+--boxpinkcolor: #f3aacb;
+--boxblueshadowcolor: #0077b6;
+--boxpinkshadowcolor:#e44f9c;
+--white: #f4fdff;
 
 /*text*/
 --h1: 7.594rem;
@@ -33,4 +38,17 @@ p{
     font-size: var(--h4);
     text-align: center;
     color: white;
+}
+
+.defaultTheme{
+    --background-color: var(--lightblue);
+    --box-color: var(--boxbluecolor); 
+    --box-shadow: var(--boxblueshadowcolor);
+    
+}
+
+.pinkTheme{
+    --background-color: var(--lightpink);
+    --box-color: var(--boxpinkcolor);
+    --box-shadow: var(--boxpinkshadowcolor);
 }
