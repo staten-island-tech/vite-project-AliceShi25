@@ -38,3 +38,23 @@ body{
     width:15vw;
     height: 13vw;
 }
+
+.button{
+    
+    display: inline-block;
+    cursor: pointer;
+    margin: 1rem auto;
+    width: 17rem;
+    height: 5rem;
+    color: var(--font-color);
+    border: var(--box-color);
+    line-height: normal;
+    background:var(--box-shadow);
+    border-radius: 5rem;
+    transition: color .2s ease,background-color .2s ease;
+    box-shadow: .2s ease;
+}
+
+button:hover{
+    box-shadow: 0 0 0 0.15rem white;
+}

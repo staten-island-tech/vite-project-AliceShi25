@@ -1,12 +1,13 @@
 :root{
 /*colors*/
---lightblue:#00b4d8;
---lightpink:#ffc2d1;
---boxbluecolor: #22c9eb;
---boxpinkcolor: #f3aacb;
---boxblueshadowcolor: #0077b6;
---boxpinkshadowcolor:#e44f9c;
---white: #f4fdff;
+--lightBlue:#00b4d8;
+--lightPink:#ffc2d1;
+--blue: #22c9eb;
+--pink: #f3aacb;
+--darkBlue: #0077b6;
+--darkPink:#e44f9c;
+--white: #fff;
+--black: #000;
 
 /*text*/
 --h1: 7.594rem;
@@ -19,36 +20,38 @@
 h1{
     font-size: var(--h1);
     text-align: center;
-    color: white;
+    color: var(--font-color);
 }
 
 h2{
     font-size: var(--h2);
     text-align: center;
-    color: white;
+    color: var(--font-color);
 }
 
 h3{
     font-size: var(--h3);
     text-align: center;
-    color: white;
+    color: var(--font-color);
 }
 
 p{
     font-size: var(--h4);
     text-align: center;
-    color: white;
+    color: var(--font-color);
 }
 
 .defaultTheme{
-    --background-color: var(--lightblue);
-    --box-color: var(--boxbluecolor); 
-    --box-shadow: var(--boxblueshadowcolor);
+    --background-color: var(--lightBlue);
+    --box-color: var(--blue); 
+    --box-shadow: var(--darkBlue);
+    --font-color: var(--white)
     
 }
 
 .pinkTheme{
-    --background-color: var(--lightpink);
-    --box-color: var(--boxpinkcolor);
-    --box-shadow: var(--boxpinkshadowcolor);
+    --background-color: var(--lightPink);
+    --box-color: var(--pink);
+    --box-shadow: var(--darkPink);
+    --font-color: var(--black)
 }
