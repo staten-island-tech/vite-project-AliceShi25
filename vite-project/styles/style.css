@@ -39,6 +39,9 @@ body{
     height: 14vw;
 }
 
+.logo{
+    margin-top: 2rem;
+}
 .button{
     
     display: inline-block;
