@@ -3,7 +3,7 @@ const stuff = [
     name: "Thing 1",
     price: "$0.50",
     image: "https://pixy.org/download/1376700/",
-    cheap: "yes",
+    cheap: true,
     popular: false,
     inStock: true,
   },

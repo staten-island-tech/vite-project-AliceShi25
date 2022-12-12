@@ -18,7 +18,7 @@ const DOMSelectors = {
 };
 
 const remove = function () {
-  document.querySelector(".box").forEach((card) => card.remove());
+  document.querySelectorAll(".box").forEach((card) => card.remove());
 };
 
 const display = {
@@ -45,16 +45,20 @@ const display = {
   },
 };
 display.createBoxes();
-display.changeTheme();
 
 const menu = {
-  all: DOMSelectors.all.addEventListener("click", function () {}),
-  cheap: DOMSelectors.cheap.addEventListener("click", function () {}),
+  all: DOMSelectors.all.addEventListener("click", function () {
+    remove();
+    stuff.forEach(display.createBoxes);
+  }),
+  cheap: DOMSelectors.cheap.addEventListener("click", function () {
+    remove();
+    const cheap = stuff.filter((stuff) => stuff.cheap.includes(true));
+    cheap.forEach(display.createBoxes);
+  }),
   popular: DOMSelectors.popular.addEventListener("click", function () {}),
   inStock: DOMSelectors.inStock.addEventListener("click", function () {}),
 };
 
 menu.all();
 menu.cheap();
-menu.popular();
-menu.inStock();
