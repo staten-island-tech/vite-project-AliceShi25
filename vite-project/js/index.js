@@ -54,11 +54,8 @@ const menu = {
   cheap: DOMSelectors.cheap.addEventListener("click", function () {
     remove();
     const cheap = stuff.filter((stuff) => stuff.cheap.includes(true));
-    cheap.forEach(display.createBoxes);
+    stuff.forEach(display.createBoxes);
   }),
   popular: DOMSelectors.popular.addEventListener("click", function () {}),
   inStock: DOMSelectors.inStock.addEventListener("click", function () {}),
 };
-
-menu.all();
-menu.cheap();
