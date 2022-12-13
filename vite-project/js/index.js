@@ -17,8 +17,10 @@ const DOMSelectors = {
   box: document.querySelector(".box"),
 };
 
-const remove = function () {
-  document.querySelectorAll(".box").forEach((card) => card.remove());
+const remove = {
+  remove: function () {
+    document.querySelectorAll(".box").forEach((card) => card.remove());
+  },
 };
 
 const display = {
@@ -48,13 +50,23 @@ display.createBoxes();
 
 const menu = {
   all: DOMSelectors.all.addEventListener("click", function () {
-    remove();
+    remove.remove();
     stuff.forEach(display.createBoxes);
   }),
   cheap: DOMSelectors.cheap.addEventListener("click", function () {
-    remove();
-    const cheap = stuff.filter((stuff) => stuff.cheap.includes(true));
-    stuff.forEach(display.createBoxes);
+    remove.remove();
+    stuff
+      .filter((k) => k.cheap.includes("yes"))
+      .forEach((l) =>
+        DOMSelectors.parent.insertAdjacentHTML(
+          "beforeend",
+          `<div class="box">
+          <h3>${l.name}</h3>
+          <img class="image" src="${l.image}">
+          <p class="info">${l.price}</p>
+          </div>`
+        )
+      );
   }),
   popular: DOMSelectors.popular.addEventListener("click", function () {}),
   inStock: DOMSelectors.inStock.addEventListener("click", function () {}),
