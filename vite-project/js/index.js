@@ -17,12 +17,6 @@ const DOMSelectors = {
   box: document.querySelector(".box"),
 };
 
-const remove = {
-  remove: function () {
-    document.querySelectorAll(".box").forEach((card) => card.remove());
-  },
-};
-
 const display = {
   changeTheme: DOMSelectors.theme.addEventListener("click", function () {
     if (document.body.classList.contains("pinkTheme")) {
@@ -33,20 +27,25 @@ const display = {
       document.body.classList.remove("defaultTheme");
     }
   }),
-  createBoxes: function () {
-    stuff.forEach((stuff) =>
-      DOMSelectors.parent.insertAdjacentHTML(
-        "beforeend",
-        `<div class="box">
-          <h3>${stuff.name}</h3>
-          <img class="image" src="${stuff.image}">
-          <p class="info">${stuff.price}</p>
+  createBoxes: function (box) {
+    DOMSelectors.parent.insertAdjacentHTML(
+      "beforeend",
+      `<div class="box">
+          <h3>${box.name}</h3>
+          <img class="image" src="${box.image}">
+          <p class="info">${box.price}</p>
           </div>`
-      )
     );
   },
 };
-display.createBoxes();
+
+stuff.forEach(display.createBoxes);
+
+const remove = {
+  remove: function () {
+    document.querySelectorAll(".box").forEach((card) => card.remove());
+  },
+};
 
 const menu = {
   all: DOMSelectors.all.addEventListener("click", function () {
@@ -55,19 +54,14 @@ const menu = {
   }),
   cheap: DOMSelectors.cheap.addEventListener("click", function () {
     remove.remove();
-    stuff
-      .filter((k) => k.cheap.includes("yes"))
-      .forEach((l) =>
-        DOMSelectors.parent.insertAdjacentHTML(
-          "beforeend",
-          `<div class="box">
-          <h3>${l.name}</h3>
-          <img class="image" src="${l.image}">
-          <p class="info">${l.price}</p>
-          </div>`
-        )
-      );
+    stuff.filter((c) => c.cheap.includes("yes")).forEach(display.createBoxes);
   }),
-  popular: DOMSelectors.popular.addEventListener("click", function () {}),
-  inStock: DOMSelectors.inStock.addEventListener("click", function () {}),
+  popular: DOMSelectors.popular.addEventListener("click", function () {
+    remove.remove();
+    stuff.filter((p) => p.popular.includes("yes")).forEach(display.createBoxes);
+  }),
+  inStock: DOMSelectors.inStock.addEventListener("click", function () {
+    remove.remove();
+    stuff.filter((i) => i.inStock.includes("yes")).forEach(display.createBoxes);
+  }),
 };
