@@ -55,3 +55,7 @@ p{
     --box-shadow: var(--darkPink);
     --font-color: var(--black)
 }
+
+.greenTheme{
+    --background-color: #00ff00;
+}

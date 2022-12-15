@@ -6,6 +6,7 @@ const stuff = [
     cheap: "yes",
     popular: "no",
     inStock: "yes",
+    new: "no",
   },
   {
     name: "Thing 2",
@@ -15,6 +16,7 @@ const stuff = [
     cheap: "yes",
     popular: "yes",
     inStock: "no",
+    new: "no",
   },
   {
     name: "Grinch",
@@ -24,6 +26,7 @@ const stuff = [
     cheap: "no",
     popular: "yes",
     inStock: "no",
+    new: "no",
   },
   {
     name: "The Cat in the Hat",
@@ -33,6 +36,7 @@ const stuff = [
     cheap: "no",
     popular: "yes",
     inStock: "yes",
+    new: "no",
   },
   {
     name: "The Lorax",
@@ -42,6 +46,7 @@ const stuff = [
     cheap: "no",
     popular: "no",
     inStock: "yes",
+    new: "no",
   },
   {
     name: "Blue Fish",
@@ -51,6 +56,7 @@ const stuff = [
     cheap: "yes",
     popular: "no",
     inStock: "yes",
+    new: "no",
   },
   {
     name: "Horton",
@@ -60,6 +66,7 @@ const stuff = [
     cheap: "yes",
     popular: "yes",
     inStock: "yes",
+    new: "no",
   },
   {
     name: "Sam-I-Am",
@@ -68,6 +75,7 @@ const stuff = [
     cheap: "yes",
     popular: "no",
     inStock: "no",
+    new: "yes",
   },
   {
     name: "Thidwick",
@@ -77,6 +85,7 @@ const stuff = [
     cheap: "yes",
     popular: "no",
     inStock: "yes",
+    new: "no",
   },
   {
     name: "Aunt Annie",
@@ -86,6 +95,7 @@ const stuff = [
     cheap: "yes",
     popular: "yes",
     inStock: "yes",
+    new: "no",
   },
   {
     name: "Barthlomew Cubbins",
@@ -95,6 +105,7 @@ const stuff = [
     cheap: "yes",
     popular: "no",
     inStock: "no",
+    new: "yes",
   },
   {
     name: "Fish",
@@ -104,6 +115,7 @@ const stuff = [
     cheap: "yes",
     popular: "no",
     inStock: "yes",
+    new: "no",
   },
   {
     name: "Blogg",
@@ -112,6 +124,7 @@ const stuff = [
     cheap: "yes",
     popular: "no",
     inStock: "yes",
+    new: "no",
   },
   {
     name: "Bolster",
@@ -121,6 +134,7 @@ const stuff = [
     cheap: "no",
     popular: "no",
     inStock: "no",
+    new: "yes",
   },
   {
     name: "Boy From Dr.Seuss's ABC",
@@ -130,6 +144,7 @@ const stuff = [
     cheap: "yes",
     popular: "no",
     inStock: "yes",
+    new: "no",
   },
   {
     name: "Ghair",
@@ -138,6 +153,7 @@ const stuff = [
     cheap: "yes",
     popular: "no",
     inStock: "yes",
+    new: "no",
   },
   {
     name: "Fritz",
@@ -146,6 +162,7 @@ const stuff = [
     cheap: "yes",
     popular: "yes",
     inStock: "yes",
+    new: "no",
   },
   {
     name: "Mayzie",
@@ -155,6 +172,7 @@ const stuff = [
     cheap: "yes",
     popular: "no",
     inStock: "yes",
+    new: "no",
   },
   {
     name: "King Derwin",
@@ -164,6 +182,7 @@ const stuff = [
     cheap: "no",
     popular: "no",
     inStock: "no",
+    new: "yes",
   },
   {
     name: "King Birtram",
@@ -173,6 +192,7 @@ const stuff = [
     cheap: "no",
     popular: "yes",
     inStock: "no",
+    new: "yes",
   },
 ];
 

@@ -13,6 +13,7 @@ const DOMSelectors = {
   cheap: document.getElementById("cheapButton"),
   popular: document.getElementById("popularButton"),
   inStock: document.getElementById("inStockButton"),
+  new: document.getElementById("newButton"),
   parent: document.querySelector(".parent"),
   box: document.querySelector(".box"),
 };
@@ -22,9 +23,12 @@ const display = {
     if (document.body.classList.contains("pinkTheme")) {
       document.body.classList.add("defaultTheme");
       document.body.classList.remove("pinkTheme");
-    } else {
+    } else if (document.body.classList.contains("greenTheme")) {
       document.body.classList.add("pinkTheme");
-      document.body.classList.remove("defaultTheme");
+      document.body.classList.remove("greenTheme");
+    } else {
+      document.body.classList.add("greenTheme");
+      document.body.classList.remove("pinkTheme");
     }
   }),
   createBoxes: function (box) {
@@ -47,21 +51,38 @@ const remove = {
   },
 };
 
-const menu = {
-  all: DOMSelectors.all.addEventListener("click", function () {
-    remove.remove();
-    stuff.forEach(display.createBoxes);
-  }),
-  cheap: DOMSelectors.cheap.addEventListener("click", function () {
-    remove.remove();
+const filter = {
+  cheap: function () {
     stuff.filter((c) => c.cheap.includes("yes")).forEach(display.createBoxes);
-  }),
-  popular: DOMSelectors.popular.addEventListener("click", function () {
-    remove.remove();
+  },
+  popular: function () {
     stuff.filter((p) => p.popular.includes("yes")).forEach(display.createBoxes);
-  }),
-  inStock: DOMSelectors.inStock.addEventListener("click", function () {
-    remove.remove();
+  },
+  inStock: function () {
     stuff.filter((i) => i.inStock.includes("yes")).forEach(display.createBoxes);
-  }),
+  },
+  new: function () {
+    stuff.filter((n) => n.new.includes("yes")).forEach(display.createBoxes);
+  },
 };
+
+DOMSelectors.all.addEventListener("click", function () {
+  remove.remove();
+  stuff.forEach(display.createBoxes);
+});
+DOMSelectors.cheap.addEventListener("click", function () {
+  remove.remove();
+  filter.cheap();
+});
+DOMSelectors.popular.addEventListener("click", function () {
+  remove.remove();
+  filter.popular();
+});
+DOMSelectors.inStock.addEventListener("click", function () {
+  remove.remove();
+  filter.inStock();
+});
+DOMSelectors.new.addEventListener("click", function () {
+  remove.remove();
+  filter.new();
+});
