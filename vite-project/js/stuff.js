@@ -30,7 +30,7 @@ const stuff = [
   },
   {
     name: "The Cat in the Hat",
-    price: "$450.00",
+    price: "$450.98",
     image:
       "https://www.seussville.com/app/uploads/2019/11/character-Cat-in-the-Hat.png",
     cheap: "no",
@@ -40,7 +40,7 @@ const stuff = [
   },
   {
     name: "The Lorax",
-    price: "$270.00",
+    price: "$270.99",
     image:
       "https://www.seussville.com/app/uploads/2019/11/character-The-Lorax.png",
     cheap: "no",
@@ -50,7 +50,7 @@ const stuff = [
   },
   {
     name: "Blue Fish",
-    price: "$1.00",
+    price: "$1.20",
     image:
       "https://www.seussville.com/app/uploads/2019/11/character-Blue-Fish.png",
     cheap: "yes",
@@ -60,7 +60,7 @@ const stuff = [
   },
   {
     name: "Horton",
-    price: "$5.00",
+    price: "$5.50",
     image:
       "https://www.seussville.com/app/uploads/2019/11/character-Horton.png",
     cheap: "yes",
@@ -89,7 +89,7 @@ const stuff = [
   },
   {
     name: "Aunt Annie",
-    price: "$62.00",
+    price: "$62.99",
     image:
       "https://www.seussville.com/app/uploads/2019/11/character-Aunt-Annie.png",
     cheap: "yes",
@@ -109,7 +109,7 @@ const stuff = [
   },
   {
     name: "Fish",
-    price: "$1.00",
+    price: "$1.16",
     image:
       "https://www.seussville.com/app/uploads/2019/11/character-Fish-Cat-in-the-Hat.png",
     cheap: "yes",
@@ -128,7 +128,7 @@ const stuff = [
   },
   {
     name: "Bolster",
-    price: "$75.00",
+    price: "$75.10",
     image:
       "https://www.seussville.com/app/uploads/2019/11/character-Bolster.png",
     cheap: "no",
@@ -138,7 +138,7 @@ const stuff = [
   },
   {
     name: "Boy From Dr.Seuss's ABC",
-    price: "$15.00",
+    price: "$15.02",
     image:
       "https://www.seussville.com/app/uploads/2019/11/character-Boy-from-ABC.png",
     cheap: "yes",
@@ -157,7 +157,7 @@ const stuff = [
   },
   {
     name: "Fritz",
-    price: "$3.00",
+    price: "$3.33",
     image: "https://www.seussville.com/app/uploads/2019/11/character-Fritz.png",
     cheap: "yes",
     popular: "yes",
@@ -166,7 +166,7 @@ const stuff = [
   },
   {
     name: "Mayzie",
-    price: "$7.00",
+    price: "$7.77",
     image:
       "https://www.seussville.com/app/uploads/2019/11/character-Mayzie.png",
     cheap: "yes",
