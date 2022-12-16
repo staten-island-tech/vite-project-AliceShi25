@@ -2,12 +2,16 @@
 /*colors*/
 --lightBlue:#00b4d8;
 --lightPink:#ffc2d1;
+--lightGreen: #91f086;
 --blue: #22c9eb;
 --pink: #f3aacb;
+--green: #48bf53;
 --darkBlue: #0077b6;
 --darkPink:#e44f9c;
+--darkGreen: #11823b;
 --white: #fff;
 --black: #000;
+--brown: #331800;
 
 /*text*/
 --h1: 7.594rem;
@@ -57,5 +61,8 @@ p{
 }
 
 .greenTheme{
-    --background-color: #00ff00;
+    --background-color: var(--lightGreen);
+    --box-color: var(--green); 
+    --box-shadow: var(--darkGreen);
+    --font-color: var(--brown);
 }

@@ -23,7 +23,7 @@ body{
 }
 
 .box{
-    flex: 0 0 24%;
+    flex: 0 0 23.5%;
     width: 32vw;
     margin: 25px auto;
     background-color: var(--box-color);
