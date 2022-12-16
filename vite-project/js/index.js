@@ -5,27 +5,16 @@ import "aos/dist/aos.css"; // You can also use <link> for styles
 AOS.init();
 import { stuff } from "./stuff";
 // console.log(stuff);
-
-const DOMSelectors = {
-  button: document.querySelector(".button"),
-  theme: document.getElementById("theme"),
-  all: document.getElementById("allButton"),
-  cheap: document.getElementById("cheapButton"),
-  popular: document.getElementById("popularButton"),
-  inStock: document.getElementById("inStockButton"),
-  new: document.getElementById("newButton"),
-  parent: document.querySelector(".parent"),
-  box: document.querySelector(".box"),
-};
+import { DOMSelectors } from "./DOMSelectors";
 
 const display = {
   changeTheme: DOMSelectors.theme.addEventListener("click", function () {
-    if (document.body.classList.contains("pinkTheme")) {
+    if (document.body.classList.contains("greenTheme")) {
       document.body.classList.add("defaultTheme");
-      document.body.classList.remove("pinkTheme");
-    } else if (document.body.classList.contains("greenTheme")) {
-      document.body.classList.add("pinkTheme");
       document.body.classList.remove("greenTheme");
+    } else if (document.body.classList.contains("defaultTheme")) {
+      document.body.classList.add("pinkTheme");
+      document.body.classList.remove("defaultTheme");
     } else {
       document.body.classList.add("greenTheme");
       document.body.classList.remove("pinkTheme");
